@@ -1,0 +1,11 @@
+2025-11-11 00:00:49.912 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-11 00:00:50.182 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-11 00:00:50.187 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-11 00:01:02.478 +03:00 [INF] JWT Configuration - Issuer: CarRentalAPI, Audience: CarRentalClients, Key Length: 53
+2025-11-11 00:01:02.497 +03:00 [WRN] No Authorization header found
+2025-11-11 00:01:14.871 +03:00 [INF] Token without Bearer prefix received, manually setting token
+2025-11-11 00:01:14.874 +03:00 [INF] Token preview: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc...
+2025-11-11 00:01:14.915 +03:00 [INF] Token validated successfully. Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 1, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: admin@carrental.com, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: Admin User, http://schemas.microsoft.com/ws/2008/06/identity/claims/role: Admin, nbf: 1762808463, exp: 1762894863, iss: CarRentalAPI, aud: CarRentalClients
+2025-11-11 00:01:24.629 +03:00 [INF] Token without Bearer prefix received, manually setting token
+2025-11-11 00:01:24.631 +03:00 [INF] Token preview: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc...
+2025-11-11 00:01:24.634 +03:00 [INF] Token validated successfully. Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 1, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: admin@carrental.com, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: Admin User, http://schemas.microsoft.com/ws/2008/06/identity/claims/role: Admin, nbf: 1762808463, exp: 1762894863, iss: CarRentalAPI, aud: CarRentalClients

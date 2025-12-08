@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\Users\\Onur\\Desktop\\Onur\\Programlama\\MD Files\\Araç Kontrol\")",
+      "Bash(dir \"C:\\Users\\Onur\\Desktop\\Onur\\Programlama\\MD Files\")",
+      "Bash(dir \"C:\\Users\\Onur\\Desktop\\Onur\\Programlama\\MD Files\\Araç\\ Kontrol\")",
+      "Bash(dir \"C:\\Users\\Onur\\Desktop\\Onur\\Programlama\\MD_Files\\Araç_Kontrol\")",
+      "Bash(mkdir:*)",
+      "Bash(dotnet new:*)",
+      "Bash(dotnet sln:*)",
+      "Bash(dotnet add:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Bash(dotnet ef migrations add:*)",
+      "Bash(dotnet run)",
+      "Bash(sqllocaldb info:*)",
+      "Bash(sqllocaldb start:*)",
+      "Bash(dotnet ef database update:*)",
+      "Bash(dotnet ef migrations:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,110 @@
+2025-11-23 12:05:15.204 +03:00 [ERR] ❌ Cannot connect to SQL Server database
+2025-11-23 12:05:15.265 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 12:25:29.126 +03:00 [ERR] ❌ Cannot connect to SQL Server database
+2025-11-23 12:25:29.181 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 12:29:28.723 +03:00 [ERR] ❌ Cannot connect to SQL Server database
+2025-11-23 12:29:28.768 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 12:46:30.614 +03:00 [ERR] ❌ Cannot connect to SQL Server database
+2025-11-23 12:46:30.668 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 12:46:32.293 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 12:51:45.269 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 12:51:45.595 +03:00 [ERR] ❌ Error during database initialization: An error was generated for warning 'Microsoft.EntityFrameworkCore.Migrations.PendingModelChangesWarning': The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database. See https://aka.ms/efcore-docs-pending-changes. This exception can be suppressed or logged by passing event ID 'RelationalEventId.PendingModelChangesWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Migrations.PendingModelChangesWarning': The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database. See https://aka.ms/efcore-docs-pending-changes. This exception can be suppressed or logged by passing event ID 'RelationalEventId.PendingModelChangesWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`1.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam arg)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.PendingModelChangesWarning(IDiagnosticsLogger`1 diagnostics, Type contextType)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.ValidateMigrations(Boolean useTransaction, String targetMigration)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.MigrateAsync(String targetMigration, CancellationToken cancellationToken)
+   at Program.<Main>$(String[] args) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Program.cs:line 169
+2025-11-23 12:51:45.610 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 14:21:12.184 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 14:21:12.410 +03:00 [ERR] ❌ Error during database initialization: An error was generated for warning 'Microsoft.EntityFrameworkCore.Migrations.PendingModelChangesWarning': The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database. See https://aka.ms/efcore-docs-pending-changes. This exception can be suppressed or logged by passing event ID 'RelationalEventId.PendingModelChangesWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Migrations.PendingModelChangesWarning': The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database. See https://aka.ms/efcore-docs-pending-changes. This exception can be suppressed or logged by passing event ID 'RelationalEventId.PendingModelChangesWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`1.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam arg)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.PendingModelChangesWarning(IDiagnosticsLogger`1 diagnostics, Type contextType)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.ValidateMigrations(Boolean useTransaction, String targetMigration)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.MigrateAsync(String targetMigration, CancellationToken cancellationToken)
+   at Program.<Main>$(String[] args) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Program.cs:line 169
+2025-11-23 14:21:12.427 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 14:21:13.665 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.StreamReader.ReadBufferAsync(CancellationToken cancellationToken)
+   at System.IO.StreamReader.ReadToEndAsyncInternal(CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.RespondWithFile(HttpResponse response, String fileName, CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 14:21:13.824 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 16:02:57.683 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 16:02:58.045 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-23 16:02:58.049 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 16:03:00.548 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 17:08:10.959 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 17:08:11.346 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-23 17:08:11.353 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 17:08:13.741 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 17:15:49.980 +03:00 [INF] Attempting to connect to the database...
+2025-11-23 17:15:50.624 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 17:15:50.626 +03:00 [INF] Applying database migrations...
+2025-11-23 17:15:50.834 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-23 17:15:50.840 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 17:20:35.011 +03:00 [INF] Attempting to connect to the database...
+2025-11-23 17:20:35.655 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 17:20:35.658 +03:00 [INF] Applying database migrations...
+2025-11-23 17:20:35.876 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-23 17:20:35.883 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 17:23:59.240 +03:00 [INF] Attempting to connect to the database...
+2025-11-23 17:24:00.175 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-23 17:24:00.176 +03:00 [INF] Applying database migrations...
+2025-11-23 17:24:00.470 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-23 17:24:00.474 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-23 17:27:58.642 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 17:28:07.536 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-23 17:30:57.511 +03:00 [ERR] An unhandled exception occurred: Invalid email or password.
+CarRentalSystem.Domain.Exceptions.UnauthorizedException: Invalid email or password.
+   at CarRentalSystem.Infrastructure.Services.AuthService.LoginAsync(LoginDto dto) in C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\Services\AuthService.cs:line 67
+   at AraçKontrol_API.Controllers.AuthController.Login(LoginDto dto) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Controllers\AuthController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23

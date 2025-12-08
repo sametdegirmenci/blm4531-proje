@@ -1,0 +1,17 @@
+2025-11-30 17:31:04.578 +03:00 [INF] Attempting to connect to the database...
+2025-11-30 17:31:06.173 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-30 17:31:06.175 +03:00 [INF] Applying database migrations...
+2025-11-30 17:31:06.564 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-30 17:31:06.570 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-30 17:31:09.349 +03:00 [ERR] An unhandled exception occurred: A task was canceled.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.IO.Stream.<CopyToAsync>g__Core|27_0(Stream source, Stream destination, Int32 bufferSize, CancellationToken cancellationToken)
+   at System.IO.Compression.DeflateStream.CopyToStream.CopyFromSourceToDestinationAsync()
+   at Swashbuckle.AspNetCore.EmbeddedResourceProvider.TryRespondWithFileAsync(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-11-30 17:31:39.906 +03:00 [INF] Fetched 4 vehicles from the database.
+2025-11-30 17:31:39.952 +03:00 [INF] Fetched 4 vehicles from the database.
+2025-11-30 17:31:46.884 +03:00 [INF] Fetched 4 vehicles from the database.
+2025-11-30 17:31:46.895 +03:00 [INF] Fetched 4 vehicles from the database.

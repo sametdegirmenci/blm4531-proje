@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24DF9844-A525-48DE-95DA-1CA141593C18}|Ara\u00E7Kontrol_API\\Ara\u00E7Kontrol_API.csproj|c:\\users\\samet\\desktop\\ara\u00E7kontrol\\ara\u00E7kontrol_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24DF9844-A525-48DE-95DA-1CA141593C18}|Ara\u00E7Kontrol_API\\Ara\u00E7Kontrol_API.csproj|solutionrelative:ara\u00E7kontrol_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24DF9844-A525-48DE-95DA-1CA141593C18}|Ara\u00E7Kontrol_API\\Ara\u00E7Kontrol_API.csproj|c:\\users\\samet\\desktop\\ara\u00E7kontrol\\ara\u00E7kontrol_api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24DF9844-A525-48DE-95DA-1CA141593C18}|Ara\u00E7Kontrol_API\\Ara\u00E7Kontrol_API.csproj|solutionrelative:ara\u00E7kontrol_api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4881F1D-90B2-405B-A85D-D3591B4287EA}|CarRentalSystem.Infrastructure\\CarRentalSystem.Infrastructure.csproj|c:\\users\\samet\\desktop\\ara\u00E7kontrol\\carrentalsystem.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4881F1D-90B2-405B-A85D-D3591B4287EA}|CarRentalSystem.Infrastructure\\CarRentalSystem.Infrastructure.csproj|solutionrelative:carrentalsystem.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4881F1D-90B2-405B-A85D-D3591B4287EA}|CarRentalSystem.Infrastructure\\CarRentalSystem.Infrastructure.csproj|c:\\users\\samet\\desktop\\ara\u00E7kontrol\\carrentalsystem.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4881F1D-90B2-405B-A85D-D3591B4287EA}|CarRentalSystem.Infrastructure\\CarRentalSystem.Infrastructure.csproj|solutionrelative:carrentalsystem.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4881F1D-90B2-405B-A85D-D3591B4287EA}|CarRentalSystem.Infrastructure\\CarRentalSystem.Infrastructure.csproj|c:\\users\\samet\\desktop\\ara\u00E7kontrol\\carrentalsystem.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4881F1D-90B2-405B-A85D-D3591B4287EA}|CarRentalSystem.Infrastructure\\CarRentalSystem.Infrastructure.csproj|solutionrelative:carrentalsystem.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\Ara\u00E7Kontrol_API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Ara\u00E7Kontrol_API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\Ara\u00E7Kontrol_API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Ara\u00E7Kontrol_API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T19:03:59.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\Ara\u00E7Kontrol_API\\Program.cs",
+              "RelativeDocumentMoniker": "Ara\u00E7Kontrol_API\\Program.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\Ara\u00E7Kontrol_API\\Program.cs",
+              "RelativeToolTip": "Ara\u00E7Kontrol_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T09:25:17.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\CarRentalSystem.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\CarRentalSystem.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CarRentalSystem.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAcwJQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T14:30:20.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\CarRentalSystem.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\CarRentalSystem.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "CarRentalSystem.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T14:30:09.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\CarRentalSystem.Infrastructure\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CarRentalSystem.Infrastructure\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\samet\\Desktop\\Ara\u00E7Kontrol\\CarRentalSystem.Infrastructure\\Services\\AuthService.cs",
+              "RelativeToolTip": "CarRentalSystem.Infrastructure\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T14:29:57.846Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

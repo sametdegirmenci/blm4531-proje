@@ -1,0 +1,49 @@
+2025-11-10 23:29:25.129 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:29:25.352 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:29:25.356 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:34:42.981 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:34:43.272 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:34:43.277 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:41:58.457 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:41:58.737 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:41:58.742 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:49:12.006 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:49:12.271 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:49:12.275 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:49:20.644 +03:00 [INF] Token received: true
+2025-11-10 23:49:20.649 +03:00 [INF] Token preview: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc...
+2025-11-10 23:49:20.660 +03:00 [WRN] Authentication challenge. Error: null, ErrorDescription: null
+2025-11-10 23:51:19.371 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:51:19.640 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:51:19.645 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:51:39.299 +03:00 [INF] JWT Configuration - Issuer: CarRentalAPI, Audience: CarRentalClients, Key Length: 53
+2025-11-10 23:51:39.318 +03:00 [INF] Token received: false
+2025-11-10 23:51:54.099 +03:00 [INF] Token received: true
+2025-11-10 23:51:54.101 +03:00 [INF] Token preview: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc...
+2025-11-10 23:51:54.113 +03:00 [WRN] Authentication challenge. Error: null, ErrorDescription: null
+2025-11-10 23:52:59.107 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:52:59.331 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:52:59.335 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:53:23.425 +03:00 [INF] JWT Configuration - Issuer: CarRentalAPI, Audience: CarRentalClients, Key Length: 53
+2025-11-10 23:53:23.436 +03:00 [INF] Token received: false
+2025-11-10 23:53:34.206 +03:00 [INF] Token received: true
+2025-11-10 23:53:34.208 +03:00 [INF] Token preview: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc...
+2025-11-10 23:53:34.215 +03:00 [WRN] Authentication challenge. Error: null, ErrorDescription: null
+2025-11-10 23:55:44.460 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:55:44.781 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:55:44.786 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:55:59.668 +03:00 [INF] JWT Configuration - Issuer: CarRentalAPI, Audience: CarRentalClients, Key Length: 53
+2025-11-10 23:55:59.687 +03:00 [INF] Token received: false
+2025-11-10 23:56:15.910 +03:00 [INF] Token received: true
+2025-11-10 23:56:15.912 +03:00 [INF] Token preview: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc...
+2025-11-10 23:56:15.928 +03:00 [WRN] Authentication challenge. Error: null, ErrorDescription: null, AuthFailure: null
+2025-11-10 23:57:45.906 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-11-10 23:57:46.181 +03:00 [INF] ✅ Database migrations applied successfully
+2025-11-10 23:57:46.186 +03:00 [INF] 🚀 Car Rental API is starting...
+2025-11-10 23:58:12.195 +03:00 [INF] JWT Configuration - Issuer: CarRentalAPI, Audience: CarRentalClients, Key Length: 53
+2025-11-10 23:58:12.215 +03:00 [INF] Authorization Header: NULL
+2025-11-10 23:58:12.216 +03:00 [WRN] No Authorization header found
+2025-11-10 23:58:26.486 +03:00 [INF] Authorization Header: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBjYXJyZW50YWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkFkbWluIFVzZXIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIm5iZiI6MTc2MjgwODI5MiwiZXhwIjoxNzYyODk0NjkyLCJpc3MiOiJDYXJSZW50YWxBUEkiLCJhdWQiOiJDYXJSZW50YWxDbGllbnRzIn0.iKWIQoipuyusQ1DiqSu6yk-t3e6ttZK71B1uOxMmYCY
+2025-11-10 23:58:26.488 +03:00 [INF] Header parts count: 1, Scheme: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZG1pbkBjYXJyZW50YWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IkFkbWluIFVzZXIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIm5iZiI6MTc2MjgwODI5MiwiZXhwIjoxNzYyODk0NjkyLCJpc3MiOiJDYXJSZW50YWxBUEkiLCJhdWQiOiJDYXJSZW50YWxDbGllbnRzIn0.iKWIQoipuyusQ1DiqSu6yk-t3e6ttZK71B1uOxMmYCY
+2025-11-10 23:58:26.490 +03:00 [WRN] Invalid authorization header format. Expected 'Bearer <token>'
+2025-11-10 23:58:26.501 +03:00 [WRN] Authentication challenge. Error: null, ErrorDescription: null, AuthFailure: null
