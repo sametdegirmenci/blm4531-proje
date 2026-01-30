@@ -116,6 +116,20 @@ public class ReservationsController : ControllerBase
     }
 
     /// <summary>
+    /// Cancel payment for a reservation (Sets status to Rejected)
+    /// </summary>
+    [HttpPost("{id}/cancel-payment")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> CancelPayment(int id)
+    {
+        var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        await _reservationService.CancelReservationPaymentAsync(id, userId);
+        return NoContent();
+    }
+
+    /// <summary>
     /// Confirm a reservation (Admin only)
     /// </summary>
     [HttpPost("{id}/confirm")]

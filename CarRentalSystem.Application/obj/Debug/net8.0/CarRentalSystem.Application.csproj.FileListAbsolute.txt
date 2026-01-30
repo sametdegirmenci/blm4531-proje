@@ -28,3 +28,4 @@ C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Application\obj\Debug\net8.0
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Application\obj\Debug\net8.0\refint\CarRentalSystem.Application.dll
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Application\obj\Debug\net8.0\CarRentalSystem.Application.pdb
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Application\obj\Debug\net8.0\ref\CarRentalSystem.Application.dll
+C:\Users\samet\desktop\AraçKontrol\CarRentalSystem.Application\obj\Debug\net8.0\CarRentalSystem.Application.sourcelink.json

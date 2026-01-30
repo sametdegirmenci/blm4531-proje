@@ -25,6 +25,7 @@ builder.Host.UseSerilog();
 
 // Add services to the container
 builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
 
 // Configure Infrastructure Services (DbContext, Repositories, Services)
 builder.Services.AddInfrastructureServices(builder.Configuration);

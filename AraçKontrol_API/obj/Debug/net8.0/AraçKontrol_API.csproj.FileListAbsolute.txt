@@ -389,3 +389,4 @@ C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\obj\Debug\net8.0\refint\Ara
 C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\obj\Debug\net8.0\AraçKontrol_API.pdb
 C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\obj\Debug\net8.0\AraçKontrol_API.genruntimeconfig.cache
 C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\obj\Debug\net8.0\ref\AraçKontrol_API.dll
+C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\obj\Debug\net8.0\AraçKontrol_API.sourcelink.json

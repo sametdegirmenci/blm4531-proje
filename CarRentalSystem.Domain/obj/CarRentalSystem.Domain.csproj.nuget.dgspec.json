@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samet\\Desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj": {}
+    "C:\\Users\\samet\\desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samet\\Desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj": {
+    "C:\\Users\\samet\\desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samet\\Desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\samet\\desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj",
         "projectName": "CarRentalSystem.Domain",
-        "projectPath": "C:\\Users\\samet\\Desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj",
+        "projectPath": "C:\\Users\\samet\\desktop\\AraçKontrol\\CarRentalSystem.Domain\\CarRentalSystem.Domain.csproj",
         "packagesPath": "C:\\Users\\samet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samet\\Desktop\\AraçKontrol\\CarRentalSystem.Domain\\obj\\",
+        "outputPath": "C:\\Users\\samet\\desktop\\AraçKontrol\\CarRentalSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

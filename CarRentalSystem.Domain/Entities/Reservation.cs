@@ -17,6 +17,7 @@ public class Reservation
     // Navigation properties
     public virtual User User { get; set; } = null!;
     public virtual Vehicle Vehicle { get; set; } = null!;
+    public virtual ICollection<PaymentTransaction> PaymentTransactions { get; set; } = new List<PaymentTransaction>();
 
     // Business logic
     public int GetRentalDays() => (EndDate - StartDate).Days;

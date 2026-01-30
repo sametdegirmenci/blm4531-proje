@@ -37,9 +37,19 @@ public class VehiclesController : ControllerBase
     [HttpGet("available")]
     [AllowAnonymous]
     [ProducesResponseType(typeof(ApiResponse<IEnumerable<VehicleDto>>), StatusCodes.Status200OK)]
-    public async Task<IActionResult> GetAvailable()
+    public async Task<IActionResult> GetAvailable([FromQuery] DateTime? startDate, [FromQuery] DateTime? endDate)
     {
-        var vehicles = await _vehicleService.GetAvailableVehiclesAsync();
+        IEnumerable<VehicleDto> vehicles;
+        
+        if (startDate.HasValue && endDate.HasValue)
+        {
+            vehicles = await _vehicleService.GetAvailableVehiclesAsync(startDate.Value, endDate.Value);
+        }
+        else
+        {
+            vehicles = await _vehicleService.GetAvailableVehiclesAsync();
+        }
+
         var response = new ApiResponse<IEnumerable<VehicleDto>>(vehicles);
         return Ok(response);
     }

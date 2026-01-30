@@ -61,4 +61,43 @@ public class AuthController : ControllerBase
         var response = new ApiResponse<UserDto>(user, "Profile fetched successfully");
         return Ok(response);
     }
+
+    [HttpPut("me")]
+    [Authorize]
+    [ProducesResponseType(typeof(ApiResponse<UserDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> UpdateMyProfile([FromBody] UpdateUserDto dto)
+    {
+        var userIdStr = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (userIdStr == null || !int.TryParse(userIdStr, out var userId))
+        {
+            return Unauthorized();
+        }
+
+        var updatedUser = await _authService.UpdateProfileAsync(userId, dto);
+        var response = new ApiResponse<UserDto>(updatedUser, "Profile updated successfully");
+        return Ok(response);
+    }
+
+    /// <summary>
+    /// Change current user's password
+    /// </summary>
+    [HttpPut("me/password")]
+    [Authorize]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ApiResponse<object>), StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+    {
+        var userIdStr = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (userIdStr == null || !int.TryParse(userIdStr, out var userId))
+        {
+            return Unauthorized();
+        }
+
+        await _authService.ChangePasswordAsync(userId, dto);
+        var response = new ApiResponse<object>(null, "Password changed successfully");
+        return Ok(response);
+    }
 }

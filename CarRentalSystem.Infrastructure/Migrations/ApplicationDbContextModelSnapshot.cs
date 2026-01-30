@@ -22,6 +22,82 @@ namespace CarRentalSystem.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CarRentalSystem.Domain.Entities.LoginLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AttemptDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FailureReason")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IpAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsSuccess")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserAgent")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("LoginLogs");
+                });
+
+            modelBuilder.Entity("CarRentalSystem.Domain.Entities.PaymentTransaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("PaymentMethod")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReservationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TransactionReference")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReservationId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PaymentTransactions");
+                });
+
             modelBuilder.Entity("CarRentalSystem.Domain.Entities.Reservation", b =>
                 {
                     b.Property<int>("ReservationId")
@@ -212,6 +288,35 @@ namespace CarRentalSystem.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("CarRentalSystem.Domain.Entities.LoginLog", b =>
+                {
+                    b.HasOne("CarRentalSystem.Domain.Entities.User", "User")
+                        .WithMany("LoginLogs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CarRentalSystem.Domain.Entities.PaymentTransaction", b =>
+                {
+                    b.HasOne("CarRentalSystem.Domain.Entities.Reservation", "Reservation")
+                        .WithMany("PaymentTransactions")
+                        .HasForeignKey("ReservationId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("CarRentalSystem.Domain.Entities.User", "User")
+                        .WithMany("PaymentTransactions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Reservation");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("CarRentalSystem.Domain.Entities.Reservation", b =>
                 {
                     b.HasOne("CarRentalSystem.Domain.Entities.User", "User")
@@ -231,8 +336,17 @@ namespace CarRentalSystem.Infrastructure.Migrations
                     b.Navigation("Vehicle");
                 });
 
+            modelBuilder.Entity("CarRentalSystem.Domain.Entities.Reservation", b =>
+                {
+                    b.Navigation("PaymentTransactions");
+                });
+
             modelBuilder.Entity("CarRentalSystem.Domain.Entities.User", b =>
                 {
+                    b.Navigation("LoginLogs");
+
+                    b.Navigation("PaymentTransactions");
+
                     b.Navigation("Reservations");
                 });
 

@@ -25,17 +25,21 @@ public static class DependencyInjection
         );
 
         // Register Repositories
-        services.AddScoped<IUserRepository, UserRepository>();
-        services.AddScoped<IVehicleRepository, VehicleRepository>();
-        services.AddScoped<IReservationRepository, ReservationRepository>();
-
-        // Register Services
-        services.AddScoped<IAuthService, AuthService>();
-        services.AddScoped<IVehicleService, VehicleService>();
-        services.AddScoped<IReservationService, ReservationService>();
-        services.AddScoped<IReportingService, ReportingService>();
-        services.AddScoped<IAdminService, AdminService>();
-        services.AddScoped<JwtTokenService>();
+                    services.AddScoped<IUserRepository, UserRepository>();
+                    services.AddScoped<IVehicleRepository, VehicleRepository>();
+                    services.AddScoped<IReservationRepository, ReservationRepository>();
+                    services.AddScoped<ILoginLogRepository, LoginLogRepository>();
+                                services.AddScoped<IPaymentTransactionRepository, PaymentTransactionRepository>();
+                    
+                                // Register Services
+                                services.AddScoped<IAuthService, AuthService>();
+                                services.AddScoped<IVehicleService, VehicleService>();
+                                services.AddScoped<IReservationService, ReservationService>();
+                                services.AddScoped<IPaymentService, PaymentService>();
+                                services.AddScoped<IAdminService, AdminService>();
+                                services.AddScoped<IReportingService, ReportingService>();
+                                services.AddScoped<JwtTokenService>();
+                    
 
         return services;
     }

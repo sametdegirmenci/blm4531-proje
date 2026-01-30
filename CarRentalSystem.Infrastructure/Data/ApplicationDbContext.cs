@@ -11,9 +11,11 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<User> Users { get; set; } = null!;
-    public DbSet<Vehicle> Vehicles { get; set; } = null!;
-    public DbSet<Reservation> Reservations { get; set; } = null!;
+    public DbSet<User> Users { get; set; }
+    public DbSet<Vehicle> Vehicles { get; set; }
+    public DbSet<Reservation> Reservations { get; set; }
+    public DbSet<LoginLog> LoginLogs { get; set; }
+    public DbSet<PaymentTransaction> PaymentTransactions { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -127,7 +129,31 @@ public class ApplicationDbContext : DbContext
                 .OnDelete(DeleteBehavior.Restrict);
         });
 
-        // Seed initial data
+        // Configure LoginLog
+        modelBuilder.Entity<LoginLog>(entity =>
+        {
+            entity.HasOne(e => e.User)
+                .WithMany(u => u.LoginLogs)
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.SetNull); // Keep log even if user is deleted
+        });
+
+        // Configure PaymentTransaction
+        modelBuilder.Entity<PaymentTransaction>(entity =>
+        {
+            entity.Property(e => e.Amount).HasColumnType("decimal(18,2)");
+
+            entity.HasOne(e => e.Reservation)
+                .WithMany(r => r.PaymentTransactions)
+                .HasForeignKey(e => e.ReservationId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            entity.HasOne(e => e.User)
+                .WithMany(u => u.PaymentTransactions)
+                .HasForeignKey(e => e.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+
         SeedData(modelBuilder);
     }
 

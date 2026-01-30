@@ -36,3 +36,4 @@ C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\obj\Debug\net
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\obj\Debug\net8.0\CarRentalSystem.Infrastructure.pdb
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\obj\Debug\net8.0\CarRentalSystem.Infrastructure.genruntimeconfig.cache
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\obj\Debug\net8.0\ref\CarRentalSystem.Infrastructure.dll
+C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\obj\Debug\net8.0\CarRentalSystem.Infrastructure.sourcelink.json

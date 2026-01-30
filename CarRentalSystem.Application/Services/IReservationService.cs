@@ -10,6 +10,7 @@ public interface IReservationService
     Task<IEnumerable<ReservationDto>> GetAllReservationsAsync();
     Task<ReservationDto> UpdateReservationAsync(int id, int userId, UpdateReservationDto dto);
     Task CancelReservationAsync(int id, int userId);
+    Task CancelReservationPaymentAsync(int id, int userId);
     Task<ReservationDto> ConfirmReservationAsync(int id);
     Task<ReservationDto> RejectReservationAsync(int id);
 }

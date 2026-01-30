@@ -1,0 +1,122 @@
+2026-01-30 09:37:50.630 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 09:37:51.951 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 09:37:51.954 +03:00 [INF] Applying database migrations...
+2026-01-30 09:37:52.344 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 09:37:52.348 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 10:26:36.588 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:26:36.588 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:26:45.621 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:26:45.621 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:26:49.710 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:26:49.710 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:36:20.151 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:38:17.831 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 10:38:18.454 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 10:38:18.458 +03:00 [INF] Applying database migrations...
+2026-01-30 10:38:18.655 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 10:38:18.661 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 10:39:00.924 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:39:00.960 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 10:59:43.914 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 10:59:44.642 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 10:59:44.645 +03:00 [INF] Applying database migrations...
+2026-01-30 10:59:44.849 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 10:59:44.855 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 11:00:19.100 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:00:19.100 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:00:21.807 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:00:27.972 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:00:27.972 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:00:46.464 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":1,"StartDate":"2026-01-30T21:00:00.0000000Z","EndDate":"2026-02-01T21:00:00.0000000Z","$type":"CreateReservationDto"}
+2026-01-30 11:00:46.529 +03:00 [INF] Conflict check for VehicleId: 1 from "2026-01-30T21:00:00.0000000Z" to "2026-02-01T21:00:00.0000000Z". Result: false
+2026-01-30 11:00:59.898 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:00:59.898 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:01:32.297 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":3,"StartDate":"2026-01-31T21:00:00.0000000Z","EndDate":"2026-02-04T21:00:00.0000000Z","$type":"CreateReservationDto"}
+2026-01-30 11:01:32.312 +03:00 [INF] Conflict check for VehicleId: 3 from "2026-01-31T21:00:00.0000000Z" to "2026-02-04T21:00:00.0000000Z". Result: false
+2026-01-30 11:01:38.830 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:01:38.830 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:01:40.228 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:01:50.757 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":4,"StartDate":"2026-02-02T21:00:00.0000000Z","EndDate":"2026-02-03T21:00:00.0000000Z","$type":"CreateReservationDto"}
+2026-01-30 11:01:50.775 +03:00 [INF] Conflict check for VehicleId: 4 from "2026-02-02T21:00:00.0000000Z" to "2026-02-03T21:00:00.0000000Z". Result: false
+2026-01-30 11:08:21.272 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 11:08:21.868 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 11:08:21.872 +03:00 [INF] Applying database migrations...
+2026-01-30 11:08:22.063 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 11:08:22.067 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 11:09:34.961 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:09:34.961 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:09:40.179 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:09:40.179 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:09:53.496 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:09:53.496 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:10:12.364 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":1,"StartDate":"2026-02-05T00:00:00.0000000","EndDate":"2026-02-06T00:00:00.0000000","$type":"CreateReservationDto"}
+2026-01-30 11:10:12.416 +03:00 [INF] Conflict check for VehicleId: 1 from "2026-02-05T00:00:00.0000000" to "2026-02-06T00:00:00.0000000". Result: false
+2026-01-30 11:10:16.628 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:10:16.628 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:13:34.221 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:13:34.230 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:13:46.850 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":2,"StartDate":"2026-02-08T00:00:00.0000000","EndDate":"2026-02-09T00:00:00.0000000","$type":"CreateReservationDto"}
+2026-01-30 11:13:46.864 +03:00 [INF] Conflict check for VehicleId: 2 from "2026-02-08T00:00:00.0000000" to "2026-02-09T00:00:00.0000000". Result: false
+2026-01-30 11:14:34.675 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:14:34.675 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:14:39.738 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:14:39.739 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:23:43.447 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 11:23:44.040 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 11:23:44.044 +03:00 [INF] Applying database migrations...
+2026-01-30 11:23:44.237 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 11:23:44.243 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 11:24:50.343 +03:00 [ERR] An unhandled exception occurred: Invalid email or password.
+CarRentalSystem.Domain.Exceptions.UnauthorizedException: Invalid email or password.
+   at CarRentalSystem.Infrastructure.Services.AuthService.LoginAsync(LoginDto dto) in C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Infrastructure\Services\AuthService.cs:line 67
+   at AraçKontrol_API.Controllers.AuthController.Login(LoginDto dto) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Controllers\AuthController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at AraçKontrol_API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2026-01-30 11:43:16.810 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 11:43:17.441 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 11:43:17.444 +03:00 [INF] Applying database migrations...
+2026-01-30 11:43:17.637 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 11:43:17.643 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 11:43:41.299 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:43:41.338 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:44:39.261 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:44:39.264 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:44:47.265 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":1,"StartDate":"2026-01-31T00:00:00.0000000","EndDate":"2026-02-01T00:00:00.0000000","$type":"CreateReservationDto"}
+2026-01-30 11:44:47.321 +03:00 [INF] Conflict check for VehicleId: 1 from "2026-01-31T00:00:00.0000000" to "2026-02-01T00:00:00.0000000". Result: false
+2026-01-30 11:48:58.038 +03:00 [INF] Attempting to connect to the database...
+2026-01-30 11:48:58.658 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2026-01-30 11:48:58.660 +03:00 [INF] Applying database migrations...
+2026-01-30 11:48:58.848 +03:00 [INF] ✅ Database migrations applied successfully
+2026-01-30 11:48:58.854 +03:00 [INF] 🚀 Car Rental API is starting...
+2026-01-30 11:49:18.242 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:49:18.242 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:49:21.705 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:49:21.705 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:49:34.140 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":2,"StartDate":"2026-01-31T00:00:00.0000000","EndDate":"2026-02-01T00:00:00.0000000","$type":"CreateReservationDto"}
+2026-01-30 11:49:34.193 +03:00 [INF] Conflict check for VehicleId: 2 from "2026-01-31T00:00:00.0000000" to "2026-02-01T00:00:00.0000000". Result: false
+2026-01-30 11:49:41.741 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:49:41.743 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:49:50.152 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":2,"StartDate":"2026-01-31T00:00:00.0000000","EndDate":"2026-02-01T00:00:00.0000000","$type":"CreateReservationDto"}
+2026-01-30 11:49:50.170 +03:00 [INF] Conflict check for VehicleId: 2 from "2026-01-31T00:00:00.0000000" to "2026-02-01T00:00:00.0000000". Result: false
+2026-01-30 11:53:31.708 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:53:31.709 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:53:45.928 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:53:45.928 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 11:53:54.456 +03:00 [INF] Attempting to create reservation for UserId: 2 with DTO: {"VehicleId":3,"StartDate":"2026-01-31T00:00:00.0000000","EndDate":"2026-02-01T00:00:00.0000000","$type":"CreateReservationDto"}
+2026-01-30 11:53:54.473 +03:00 [INF] Conflict check for VehicleId: 3 from "2026-01-31T00:00:00.0000000" to "2026-02-01T00:00:00.0000000". Result: false
+2026-01-30 12:47:41.949 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 12:47:41.957 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 13:38:26.322 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-30 13:38:26.329 +03:00 [INF] Fetched 5 vehicles from the database.

@@ -14,4 +14,6 @@ public class User
 
     // Navigation properties
     public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
+    public virtual ICollection<LoginLog> LoginLogs { get; set; } = new List<LoginLog>();
+    public virtual ICollection<PaymentTransaction> PaymentTransactions { get; set; } = new List<PaymentTransaction>();
 }

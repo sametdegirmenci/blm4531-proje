@@ -12,6 +12,10 @@ public class Vehicle
     public string? LicensePlate { get; set; }
     public DateTime CreatedAt { get; set; }
 
-    // Navigation properties
-    public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
-}
+        // Navigation properties
+
+        public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
+
+    }
+
+    

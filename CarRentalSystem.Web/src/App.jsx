@@ -10,6 +10,7 @@ import RentalsPage from './pages/RentalsPage';
 import ProfilePage from './pages/ProfilePage';
 import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 import NewRentalPage from './pages/NewRentalPage'; // Import NewRentalPage
+import PaymentPage from './pages/PaymentPage';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
 
@@ -35,6 +36,7 @@ function AppContent() {
           <Route path="/rentals" element={<PrivateRoute><RentalsPage /></PrivateRoute>} />
           <Route path="/rentals/new" element={<PrivateRoute><NewRentalPage /></PrivateRoute>} /> {/* New rental route */}
           <Route path="/rentals/new/:id" element={<PrivateRoute><NewRentalPage /></PrivateRoute>} /> {/* New rental route with pre-selected vehicle */}
+          <Route path="/payment/:reservationId" element={<PrivateRoute><PaymentPage /></PrivateRoute>} />
           <Route path="/profile" element={<PrivateRoute><ProfilePage /></PrivateRoute>} />
           
           {/* Admin Protected Route */}

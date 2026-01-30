@@ -1,0 +1,11 @@
+2025-12-29 23:42:14.699 +03:00 [INF] Attempting to connect to the database...
+2025-12-29 23:42:16.409 +03:00 [INF] ✅ Successfully connected to SQL Server database
+2025-12-29 23:42:16.410 +03:00 [INF] Applying database migrations...
+2025-12-29 23:42:16.730 +03:00 [ERR] ❌ Error during database initialization: An error was generated for warning 'Microsoft.EntityFrameworkCore.Migrations.PendingModelChangesWarning': The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database. See https://aka.ms/efcore-docs-pending-changes. This exception can be suppressed or logged by passing event ID 'RelationalEventId.PendingModelChangesWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+System.InvalidOperationException: An error was generated for warning 'Microsoft.EntityFrameworkCore.Migrations.PendingModelChangesWarning': The model for context 'ApplicationDbContext' has pending changes. Add a new migration before updating the database. See https://aka.ms/efcore-docs-pending-changes. This exception can be suppressed or logged by passing event ID 'RelationalEventId.PendingModelChangesWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+   at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`1.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam arg)
+   at Microsoft.EntityFrameworkCore.Diagnostics.RelationalLoggerExtensions.PendingModelChangesWarning(IDiagnosticsLogger`1 diagnostics, Type contextType)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.ValidateMigrations(Boolean useTransaction, String targetMigration)
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.MigrateAsync(String targetMigration, CancellationToken cancellationToken)
+   at Program.<<Main>$>g__InitializeDatabaseAsync|0_4(WebApplication app) in C:\Users\samet\Desktop\AraçKontrol\AraçKontrol_API\Program.cs:line 178
+2025-12-29 23:42:16.754 +03:00 [INF] 🚀 Car Rental API is starting...

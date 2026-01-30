@@ -38,5 +38,17 @@ public class MappingProfile : Profile
 
         CreateMap<UpdateReservationDto, Reservation>()
             .ForMember(dest => dest.UpdatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow));
+
+        // LoginLog mappings
+        CreateMap<LoginLog, LoginLogDto>();
+
+        // PaymentTransaction mappings
+        CreateMap<PaymentTransaction, PaymentTransactionDto>()
+            .ForMember(dest => dest.PaymentMethod, opt => opt.MapFrom(src => src.PaymentMethod.ToString()))
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status.ToString()));
+
+        CreateMap<CreatePaymentTransactionDto, PaymentTransaction>()
+            .ForMember(dest => dest.TransactionDate, opt => opt.MapFrom(_ => DateTime.UtcNow))
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(_ => PaymentStatus.Pending));
     }
 }

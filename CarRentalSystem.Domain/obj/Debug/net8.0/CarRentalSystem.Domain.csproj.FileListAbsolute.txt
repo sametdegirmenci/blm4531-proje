@@ -20,3 +20,4 @@ C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Domain\obj\Debug\net8.0\CarR
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Domain\obj\Debug\net8.0\refint\CarRentalSystem.Domain.dll
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Domain\obj\Debug\net8.0\CarRentalSystem.Domain.pdb
 C:\Users\samet\Desktop\AraçKontrol\CarRentalSystem.Domain\obj\Debug\net8.0\ref\CarRentalSystem.Domain.dll
+C:\Users\samet\desktop\AraçKontrol\CarRentalSystem.Domain\obj\Debug\net8.0\CarRentalSystem.Domain.sourcelink.json

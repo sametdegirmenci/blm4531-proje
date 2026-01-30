@@ -11,25 +11,29 @@ namespace CarRentalSystem.Infrastructure.Services;
 public class AuthService : IAuthService
 {
     private readonly IUserRepository _userRepository;
+    private readonly ILoginLogRepository _loginLogRepository;
     private readonly JwtTokenService _jwtTokenService;
     private readonly IMapper _mapper;
 
-    public AuthService(IUserRepository userRepository, JwtTokenService jwtTokenService, IMapper mapper)
+    public AuthService(
+        IUserRepository userRepository, 
+        ILoginLogRepository loginLogRepository,
+        JwtTokenService jwtTokenService, 
+        IMapper mapper)
     {
         _userRepository = userRepository;
+        _loginLogRepository = loginLogRepository;
         _jwtTokenService = jwtTokenService;
         _mapper = mapper;
     }
 
     public async Task<AuthResponseDto> RegisterAsync(RegisterUserDto dto)
     {
-        // Check if email already exists
         if (await _userRepository.EmailExistsAsync(dto.Email))
         {
             throw new ConflictException("A user with this email already exists.");
         }
 
-        // Create new user
         var user = new User
         {
             FullName = dto.FullName,
@@ -41,11 +45,7 @@ public class AuthService : IAuthService
         };
 
         user = await _userRepository.AddAsync(user);
-
-        // Generate JWT token
         var token = _jwtTokenService.GenerateToken(user);
-
-        // Map to DTO
         var userDto = _mapper.Map<UserDto>(user);
 
         return new AuthResponseDto(token, userDto);
@@ -53,33 +53,53 @@ public class AuthService : IAuthService
 
     public async Task<AuthResponseDto> LoginAsync(LoginDto dto)
     {
-        // Find user by email
         var user = await _userRepository.GetByEmailAsync(dto.Email);
 
         if (user == null)
         {
+            await _loginLogRepository.AddAsync(new LoginLog { Email = dto.Email, AttemptDate = DateTime.UtcNow, IsSuccess = false, FailureReason = "User not found" });
             throw new UnauthorizedException("Invalid email or password.");
         }
 
-        // Verify password
         if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
         {
+            await _loginLogRepository.AddAsync(new LoginLog { Email = dto.Email, UserId = user.UserId, AttemptDate = DateTime.UtcNow, IsSuccess = false, FailureReason = "Invalid password" });
             throw new UnauthorizedException("Invalid email or password.");
         }
 
-        // Check if user is active
         if (!user.IsActive)
         {
+             await _loginLogRepository.AddAsync(new LoginLog { Email = dto.Email, UserId = user.UserId, AttemptDate = DateTime.UtcNow, IsSuccess = false, FailureReason = "Account deactivated" });
             throw new UnauthorizedException("This account has been deactivated.");
         }
 
-        // Generate JWT token
+        await _loginLogRepository.AddAsync(new LoginLog { Email = dto.Email, UserId = user.UserId, AttemptDate = DateTime.UtcNow, IsSuccess = true });
+        
         var token = _jwtTokenService.GenerateToken(user);
-
-        // Map to DTO
         var userDto = _mapper.Map<UserDto>(user);
 
         return new AuthResponseDto(token, userDto);
+    }
+
+    public async Task<UserDto> UpdateProfileAsync(int userId, UpdateUserDto dto)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null)
+        {
+            throw new NotFoundException("User not found.");
+        }
+
+        if (user.Email.ToLower() != dto.Email.ToLower() && await _userRepository.EmailExistsAsync(dto.Email))
+        {
+            throw new ConflictException("This email is already in use by another account.");
+        }
+
+        user.FullName = dto.FullName;
+        user.Email = dto.Email;
+        
+        await _userRepository.UpdateAsync(user);
+
+        return _mapper.Map<UserDto>(user);
     }
 
     public string GenerateJwtToken(User user)
@@ -97,8 +117,28 @@ public class AuthService : IAuthService
         var user = await _userRepository.GetByIdAsync(userId);
         if (user == null)
         {
-            throw new NotFoundException("User not found.");
+            throw new NotFoundException(nameof(User), userId);
         }
         return _mapper.Map<UserDto>(user);
+    }
+
+    public async Task ChangePasswordAsync(int userId, ChangePasswordDto dto)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null)
+        {
+            throw new NotFoundException(nameof(User), userId);
+        }
+
+        // Verify current password
+        if (!BCrypt.Net.BCrypt.Verify(dto.CurrentPassword, user.PasswordHash))
+        {
+            throw new UnauthorizedException("Incorrect current password.");
+        }
+
+        // Hash new password
+        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);
+        
+        await _userRepository.UpdateAsync(user);
     }
 }

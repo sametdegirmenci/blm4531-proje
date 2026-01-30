@@ -1,0 +1,2 @@
+2026-01-31 02:02:07.307 +03:00 [INF] Fetched 5 vehicles from the database.
+2026-01-31 02:02:07.307 +03:00 [INF] Fetched 5 vehicles from the database.

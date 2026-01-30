@@ -30,6 +30,12 @@ public class VehicleService : IVehicleService
         return _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
     }
 
+    public async Task<IEnumerable<VehicleDto>> GetAvailableVehiclesAsync(DateTime startDate, DateTime endDate)
+    {
+        var vehicles = await _vehicleRepository.GetAvailableVehiclesAsync(startDate, endDate);
+        return _mapper.Map<IEnumerable<VehicleDto>>(vehicles);
+    }
+
     public async Task<VehicleDto> GetVehicleByIdAsync(int id)
     {
         var vehicle = await _vehicleRepository.GetByIdAsync(id);

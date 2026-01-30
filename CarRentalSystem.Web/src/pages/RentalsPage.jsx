@@ -76,6 +76,13 @@ function RentalsPage() {
     );
   }
 
+  const formatDate = (dateString) => {
+    if (!dateString) return 'N/A';
+    // dateString is expected to be ISO format (e.g. 2023-10-30T00:00:00 or 2023-10-30T00:00:00Z)
+    // We want to extract the date part "2023-10-30" regardless of timezone
+    return dateString.substring(0, 10);
+  };
+
   return (
     <div className="container mt-5">
       <h1>{user?.role === 'Admin' ? 'All Rentals' : 'My Rentals'}</h1>
@@ -105,8 +112,8 @@ function RentalsPage() {
                 <td>{rental.reservationId}</td>
                 {user?.role === 'Admin' && <td>{rental.user?.fullName || 'N/A'}</td>}
                 <td>{rental.vehicle?.brand} {rental.vehicle?.model}</td>
-                <td>{new Date(rental.startDate).toLocaleDateString()}</td>
-                <td>{new Date(rental.endDate).toLocaleDateString()}</td>
+                <td>{formatDate(rental.startDate)}</td>
+                <td>{formatDate(rental.endDate)}</td>
                 <td>{rental.status}</td>
                 {user?.role === 'Admin' && (
                   <td>

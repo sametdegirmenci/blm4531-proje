@@ -12,9 +12,15 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">CarRental</Link>
+    <nav className="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div className="container">
+        <Link className="navbar-brand" to="/">
+          <i className="bi bi-car-front-fill me-2"></i>
+          AraçKontrol
+        </Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">

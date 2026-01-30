@@ -1,3 +1,9 @@
+using AutoMapper;
+using CarRentalSystem.Application.DTOs;
+using CarRentalSystem.Application.Services;
+using CarRentalSystem.Domain.Entities;
+using CarRentalSystem.Domain.Enums;
+using CarRentalSystem.Domain.Exceptions;
 using CarRentalSystem.Domain.Interfaces;
 using Microsoft.Extensions.Logging;
 
@@ -34,7 +40,25 @@ public class ReservationService : IReservationService
         {
             throw new NotFoundException(nameof(User), userId);
         }
-...
+
+        // Validate vehicle exists
+        var vehicle = await _vehicleRepository.GetByIdAsync(dto.VehicleId);
+        if (vehicle == null)
+        {
+            throw new NotFoundException(nameof(Vehicle), dto.VehicleId);
+        }
+
+        // Validate dates
+        if (dto.EndDate <= dto.StartDate)
+        {
+            throw new ValidationException("End date must be after start date.");
+        }
+
+        if (dto.StartDate < DateTime.UtcNow.Date)
+        {
+            throw new ValidationException("Start date cannot be in the past.");
+        }
+
         // Check for conflicting reservations
         var hasConflict = await _reservationRepository.HasConflictingReservationAsync(dto.VehicleId, dto.StartDate, dto.EndDate);
         _logger.LogInformation("Conflict check for VehicleId: {VehicleId} from {StartDate} to {EndDate}. Result: {HasConflict}", dto.VehicleId, dto.StartDate, dto.EndDate, hasConflict);
@@ -174,14 +198,32 @@ public class ReservationService : IReservationService
 
         reservation.Status = ReservationStatus.Cancelled;
         await _reservationRepository.UpdateAsync(reservation);
+    }
 
-        // Make the vehicle available again
-        var vehicle = await _vehicleRepository.GetByIdAsync(reservation.VehicleId);
-        if (vehicle != null)
+    public async Task CancelReservationPaymentAsync(int id, int userId)
+    {
+        var reservation = await _reservationRepository.GetByIdAsync(id);
+
+        if (reservation == null)
         {
-            vehicle.IsAvailable = true;
-            await _vehicleRepository.UpdateAsync(vehicle);
+            throw new NotFoundException(nameof(Reservation), id);
         }
+
+        // Verify user owns the reservation
+        if (reservation.UserId != userId)
+        {
+            throw new UnauthorizedException("You can only cancel payment for your own reservations.");
+        }
+
+        // Only allow if Pending
+        if (reservation.Status != ReservationStatus.Pending)
+        {
+            throw new ValidationException("Only pending reservations can be rejected via payment cancellation.");
+        }
+
+        // Requirement: Set status to Rejected
+        reservation.Status = ReservationStatus.Rejected;
+        await _reservationRepository.UpdateAsync(reservation);
     }
 
     public async Task<ReservationDto> ConfirmReservationAsync(int id)
@@ -201,14 +243,6 @@ public class ReservationService : IReservationService
 
         reservation.Status = ReservationStatus.Confirmed;
         await _reservationRepository.UpdateAsync(reservation);
-
-        // Make the vehicle unavailable
-        var vehicle = await _vehicleRepository.GetByIdAsync(reservation.VehicleId);
-        if (vehicle != null)
-        {
-            vehicle.IsAvailable = false;
-            await _vehicleRepository.UpdateAsync(vehicle);
-        }
 
         return _mapper.Map<ReservationDto>(reservation);
     }

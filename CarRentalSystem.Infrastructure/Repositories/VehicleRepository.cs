@@ -69,6 +69,18 @@ public class VehicleRepository : IVehicleRepository
             .ToListAsync();
     }
 
+    public async Task<IEnumerable<Vehicle>> GetAvailableVehiclesAsync(DateTime startDate, DateTime endDate)
+    {
+        return await _context.Vehicles
+            .Where(v => v.IsAvailable)
+            .Where(v => !v.Reservations.Any(r =>
+                (r.Status == ReservationStatus.Pending || r.Status == ReservationStatus.Confirmed) &&
+                ((startDate >= r.StartDate && startDate < r.EndDate) ||
+                 (endDate > r.StartDate && endDate <= r.EndDate) ||
+                 (startDate <= r.StartDate && endDate >= r.EndDate))))
+            .ToListAsync();
+    }
+
     public async Task<IEnumerable<Vehicle>> GetVehiclesByBrandAsync(string brand)
     {
         return await _context.Vehicles
